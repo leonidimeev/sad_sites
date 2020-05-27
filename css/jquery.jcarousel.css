@@ -14,7 +14,7 @@
     position: relative;
 
     /*Изменено*/
-    width: 980px;
+    width: 990px;
     height: 495px;
 }
 
@@ -35,7 +35,7 @@
     /* We set the width/height explicitly. No width/height causes infinite loops. */
 
     /*Изменено*/
-    width: 980px;
+    width: 990px;
     height: 495px;
     position: relative; /* IE6 and PNG fix for background and relative a */
 }
