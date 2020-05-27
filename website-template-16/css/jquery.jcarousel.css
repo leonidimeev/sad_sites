@@ -12,6 +12,8 @@
     margin: 0;
     overflow: hidden;
     position: relative;
+
+    /*Изменено*/
     width: 980px;
     height: 495px;
 }
@@ -31,6 +33,8 @@
     float: left;
     list-style: none;
     /* We set the width/height explicitly. No width/height causes infinite loops. */
+
+    /*Изменено*/
     width: 980px;
     height: 495px;
     position: relative; /* IE6 and PNG fix for background and relative a */

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Назначение DOCTYPE -->
+
+<!-- 
+Задание - сайт по дисциплине WEB - технологии с комментариями
+Выполнили студенты группы ПМ-17
+Имеев Леонид 
+Халыев Ньургун
+Тарабукин Иван -->
+
+<html lang="ru-RU" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Расписание</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+	<script type="text/javascript" src="clock.js"></script>
+
+</head>
+
+<body>
+<div class="shell">
+	<div id="header">
+
+		<!-- Заголовок -->
+		<h1 id="logo"><a href="#">Сайт-задание по дисциплине<br /><span class="min"><span class="red">WEB - технологии</span></a></h1>
+
+		<!-- Навигация -->
+		<div id="navigation">
+			<ul>
+
+				<!-- При указании на элемент изменяет класс объекта на active - описано в style.css -->
+				<li><a href="home.html">Группа</a></li>
+				<li><a href="#">Навигация по VPS</a></li>
+				<li><a href="raspisanie.html">Расписание</a></li>
+				<li><a href="#">JS-Скрипты</a></li>
+
+			</ul>
+			<div class="cl">&nbsp;</div>
+		</div>
+
+	</div>
+	
+	<div id="main">
+		<div id="content" class="head">
+			<div class="head">
+				<h3>Страница со скриптом - часы</h3>
+			</div>
+			<div class="cl">&nbsp;</div>
+		</div>
+
+		<div id="content" class="head">
+		<font color="#FF0061">Сейчас
+		<p><SCRIPT> writeDate(); </SCRIPT> </p>
+		<p><SCRIPT> writeTime(); </SCRIPT> </p>
+
+		</div>
+		
+			
+	</div>
+	<div class="cl">&nbsp;</div>
+	
+	<div id="footer">
+		<div class="nav left">
+			
+		</div>
+
+		<p class="copy right">© ПМ17 2020</p>
+		<div class="cl">&nbsp;</div>
+	</div>
+</div>
+</body>
+</html>

@@ -29,14 +29,13 @@ textarea { overflow:hidden; }
 #header { height: 119px; border-bottom: 1px solid #c8c8c8; position: relative; }
 #logo a { width: 230px; height: 120px; position: absolute; top:0;left:0; font-family: Georgia, Arial, serif; font-size: 28px; line-height: 27px; color: #3d3d3d; font-weight: normal; font-style: italic; padding: 17px 0 0 0; }
 #logo a:hover { text-decoration: none; }
-#logo a .min { font-size: 26px; line-height: 40px; position: relative; top:-10px; }
+#logo a .min { font-size: 26px; line-height: 40px; position: relative; top:-5px; }
 #logo a .red { color: #ed1c24; }
 
 /*Стили навигации*/
 #navigation { height: 70px; padding: 0 0 0 250px; }
 #navigation ul { list-style: none; }
-#navigation ul li { display: inline; float: left; font-size: 15px; line-height: 20px; text-transform: uppercase; padding: 5px 45px 5px 5px; }
-#navigation ul li.last { padding:0; }
+#navigation ul li { display: inline; float: left; font-size: 15px; line-height: 20px; text-transform: uppercase; padding: 5px 15px 5px 5px; }
 #navigation ul li a { float: left; color: #969696; padding: 80px 30px 1px 4px; }
 #navigation ul li a:hover, 
 #navigation ul li a.active { background: #ed1c24; color: #fff; text-decoration: none; }
@@ -82,6 +81,15 @@ textarea { overflow:hidden; }
 
 #footer .copy { font-size: 10px; color: #685d5d; }
 #footer .copy a { color: #ed1c24; text-transform: uppercase; }
+
+TABLE{
+	width: 100%; /* Ширина таблиц */
+}
+TD{
+	vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+	column-width: 700px;
+}
+   
 
 
 
