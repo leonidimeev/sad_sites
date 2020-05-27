@@ -1,0 +1,107 @@
+* { margin: 10; padding: 10; outline: 10; }
+
+body {
+    font-size: 14px;
+    line-height: 15px;
+    font-family: Arial, Helvetica, Sans-Serif;
+    /*color: #3d3d3d;*/
+    /*background: #fff;*/
+}
+
+/*Стиль для курсора (когда hover - смена стиля)*/
+a { color: #0252aa; text-decoration: none; cursor:pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+
+input, textarea, select { font-family: Arial, Helvetica, sans-serif; font-size:12px; }
+textarea { overflow:hidden; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+
+.shell { width: 980px; margin: 0 auto; }
+
+#header { height: 119px; border-bottom: 1px solid #c8c8c8; position: relative; }
+#logo a { width: 230px; height: 120px; position: absolute; top:0;left:0; font-family: Georgia, Arial, serif; font-size: 28px; line-height: 27px; color: #3d3d3d; font-weight: normal; font-style: italic; padding: 17px 0 0 0; }
+#logo a:hover { text-decoration: none; }
+#logo a .min { font-size: 26px; line-height: 40px; position: relative; top:-10px; }
+#logo a .red { color: #ed1c24; }
+
+/*Стили навигации*/
+#navigation { height: 70px; padding: 0 0 0 250px; }
+#navigation ul { list-style: none; }
+#navigation ul li { display: inline; float: left; font-size: 15px; line-height: 20px; text-transform: uppercase; padding: 5px 45px 5px 5px; }
+#navigation ul li.last { padding:0; }
+#navigation ul li a { float: left; color: #969696; padding: 80px 30px 1px 4px; }
+#navigation ul li a:hover, 
+#navigation ul li a.active { background: #ed1c24; color: #fff; text-decoration: none; }
+#navigation ul li a.active { font-weight: bold; }
+
+/*Стиль окна слайдера*/
+.slider-holder { width: 980px; height: 500px; position: relative; border-bottom: 1px solid #c8c8c8; margin: 5px 5px 25px 5px; }
+.slider-holder .prev, 
+.slider-holder .next { background: url(images/prev-next.gif) no-repeat 0 0; width: 20px; height: 30px; position: absolute; top:220px; z-index: 100; }
+.slider-holder .prev { left:24px; }
+.slider-holder .next { background-position: 0 -27px; right:17px; }
+
+#main { padding: 0 0 50px 0; }
+
+#content { width: 670px; padding: 0 0 0 3px; }
+#content h2 { font-size: 18px; line-height: 21px; color: #ed1c24; text-transform: uppercase; }
+#content h3 { font-size: 12px; }
+#content p {  }
+
+#content .head { padding: 0 0 44px 0; }
+#content .head h2 { padding: 0 0 17px 0; }
+#content .head h3 { padding: 0 0 8px 0; }
+#content .head p {  }
+
+#content .col { width: 296px; }
+#content .col h2 {  }
+#content .col h3 {  }
+#content .col p {  }
+
+#sidebar { width: 255px; }
+#sidebar h2 { font-size: 18px; line-height: 21px; color: #000; font-weight: normal; padding: 0 0 15px 0; }
+#sidebar h3 { font-size: 12px; }
+#sidebar p {  }
+#sidebar .item { padding: 0 0 17px 4px; }
+#sidebar .date { font-size: 10px; color: #fd3801; }
+
+#footer { height: 100%; border-top: 1px solid #c8c8c8; padding: 12px 0; }
+#footer .nav {  }
+#footer .nav ul { list-style: none; }
+#footer .nav ul li { display: inline; font-size: 10px; line-height: 11px; border-right: 1px solid #685d5d; padding: 0 6px 0 0; margin: 0 6px 0 0; }
+#footer .nav ul li.last { border:0; padding:0; margin:0; }
+#footer .nav ul a { color: #685d5d; }
+
+#footer .copy { font-size: 10px; color: #685d5d; }
+#footer .copy a { color: #ed1c24; text-transform: uppercase; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
