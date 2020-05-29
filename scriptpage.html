@@ -15,11 +15,12 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 
-	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script><!--  Скрипт - часы -->
+	<script type="text/javascript" src="js/tasks.js"></script>
 
 </head>
 
-<body>
+<body onload="starttimer()" onunload="stoptimer()"> <!-- Таймер для движущейся картинки -->
 <div class="shell">
 	<div id="header">
 
@@ -42,33 +43,87 @@
 
 	</div>
 	
+
 	<div id="main">
-		<div id="content" class="head">
-			<div class="head">
-				<h3>Страница со скриптом - часы</h3>
+
+		<div>
+			<h2>Страница со скриптами</h2>
+			<div id="sidebar" class="right">
+			<div class="item">
+			<h2>Системное время</h2>
+			<p><SCRIPT> writeDate(); </SCRIPT> </p>
+			<p><SCRIPT> writeTime(); </SCRIPT> </p>
 			</div>
+		</div>
+			<img id="moving_image" src="css/images/moving_image.jpeg" width="200" height="350">
+			<script>
+    			moving_image.onclick = function() {
+     			let start = Date.now();
+				let timer = setInterval(function() {
+        		let timePassed = Date.now() - start;
+				moving_image.style.left = timePassed / 5 + 'px';
+				if (timePassed > 2000) clearInterval(timer);
+				}, 20);	}
+ 			</script>
 			<div class="cl">&nbsp;</div>
 		</div>
 
-		<div id="content" class="head">
-		<font color="#FF0061">Сейчас
-		<p><SCRIPT> writeDate(); </SCRIPT> </p>
-		<p><SCRIPT> writeTime(); </SCRIPT> </p>
+		<div>
+			<div class=all_page>
+ 				<div class=left_content_border>
+ 					<div class=left_content>
+ 						<h3>Замена картинки</h3>
+						<img id="changing_image" src="css/images/changing2.jpeg"
+						onmouseover="moveover()"
+						onmouseout="moveback()" width="300" height="400" />
+						<div class="cl">&nbsp;</div>
+ 					</div>
+ 				</div>
+ 				<div class=right_content_border>
+ 					<div class=right_content>
+ 						<h3>Увеличение картинки</h3>
+						<img id="bigger_image" src="css/images/bigger.jpeg"
+						onmouseover="moveoverbigger()"
+						onmouseout="movebackbigger()"
+						width="200" height="300" />
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="cl">&nbsp;</div>
+ 		<div>
+ 			<div class=all_page>
+ 				<div class=left_content_border>
+ 					<div class=left_content>
+ 						<h3>Увеличить прозрачность картинки</h3>
+						<img id="transparent_image" src="css/images/changing2.jpeg"
+						onmouseover="moveoveropacityandwritemsg()"
+						onmouseout="movebackopacityandwritemsg()" width="300" height="400" />
+						<form>
+						<input id="msgfield" size="65">
+						</form>
+						<div class="cl">&nbsp;</div>
+ 					</div>
+ 				</div>
+ 				<div class=right_content_border>
+ 					<div class=right_content>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="cl">&nbsp;</div>
 
-		</div>
-		
-			
 	</div>
-	<div class="cl">&nbsp;</div>
 	
 	<div id="footer">
 		<div class="nav left">
-			
+			orem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		</div>
 
 		<p class="copy right">© ПМ17 2020</p>
 		<div class="cl">&nbsp;</div>
 	</div>
-</div>
+
+	</div>
 </body>
 </html>

@@ -14,6 +14,23 @@ a:hover { text-decoration: underline; }
 a img { border: 0; }
 
 
+#content { width: 670px; padding: 0 0 0 3px; }
+#content h2 { font-size: 18px; line-height: 21px; color: #ed1c24; text-transform: uppercase; }
+#content h3 { font-size: 12px; }
+#content p {  }
+
+#content .head { padding: 0 0 44px 0; }
+#content .head h2 { padding: 0 0 17px 0; }
+#content .head h3 { padding: 0 0 8px 0; }
+#content .head p {  }
+
+#content .col { width: 296px; }
+#content .col h2 {  }
+#content .col h3 {  }
+#content .col p {  }
+
+
+
 input, textarea, select { font-family: Arial, Helvetica, sans-serif; font-size:12px; }
 textarea { overflow:hidden; }
 
@@ -22,6 +39,26 @@ textarea { overflow:hidden; }
 
 .left, .alignleft { float: left; display: inline; }
 .right, .alignright { float: right; display: inline; }
+
+/*Для 2 колонн скриптов*/
+.right_content_border {
+ margin-left: 50%;
+}
+
+.left_content_border{
+ margin-left: 50%
+ width: 50%;
+ float: left;
+}
+.left_content {
+ margin-right: 50%;
+}
+.right_content_border {
+ margin-right: 50%;
+}
+.right_content {
+ margin-right: 50%;
+}
 
 
 .shell { width: 980px; margin: 0 auto; }
@@ -50,20 +87,7 @@ textarea { overflow:hidden; }
 
 #main { padding: 0 0 50px 0; }
 
-#content { width: 670px; padding: 0 0 0 3px; }
-#content h2 { font-size: 18px; line-height: 21px; color: #ed1c24; text-transform: uppercase; }
-#content h3 { font-size: 12px; }
-#content p {  }
 
-#content .head { padding: 0 0 44px 0; }
-#content .head h2 { padding: 0 0 17px 0; }
-#content .head h3 { padding: 0 0 8px 0; }
-#content .head p {  }
-
-#content .col { width: 296px; }
-#content .col h2 {  }
-#content .col h3 {  }
-#content .col p {  }
 
 #sidebar { width: 255px; }
 #sidebar h2 { font-size: 18px; line-height: 21px; color: #000; font-weight: normal; padding: 0 0 15px 0; }
@@ -90,6 +114,15 @@ TD{
 	column-width: 700px;
 }
    
+transparent_img{
+	opacity: 0.5;
+}
+
+/*движущаяся картинка*/
+#moving_image {
+      position: relative;
+      cursor: pointer;
+    }
 
 
 

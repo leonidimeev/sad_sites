@@ -1,13 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Назначение DOCTYPE -->
-
-<!-- 
-Задание - сайт по дисциплине WEB - технологии с комментариями
-Выполнили студенты группы ПМ-17
-Имеев Леонид 
-Халыев Ньургун
-Тарабукин Иван -->
 
 <html lang="ru-RU" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
 <head>
@@ -27,6 +19,9 @@
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="js/func.js"></script>
+
+	<script type="text/javascript" src="js/clock.js"></script><!--  Скрипт - часы -->
+	<script type="text/javascript" src="js/tasks.js"></script>
 
 </head>
 
@@ -77,18 +72,48 @@
 			</div>
 			<div class="col left">
 				<h2>Название колонки</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipi</h3>
-				<p>scing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor.iscing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor.</p>
+				<div class=left_content_border>
+ 					<div class=left_content>
+						<!-- <img id="changing_image" src="css/images/changing2.jpeg"
+						onmouseover="moveover()"
+						onmouseout="moveback()" width="300" height="400" /> -->
+ 					</div>
+ 					<div class="cl">&nbsp;</div>
+ 					<div>
+ 						<h4>Увеличить прозрачность картинки</h4>
+						<img id="transparent_image" src="css/images/changing2.jpeg"
+						onmouseover="moveoveropacityandwritemsg()"
+						onmouseout="movebackopacityandwritemsg()" width="300" height="400" />
+						<form>
+						<input id="msgfield" size="53">
+						</form>
+						<div class="cl">&nbsp;</div>
+ 					</div>
+ 				</div>
 			</div>
 			<div class="col right">
 				<h2>название колонки</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipi</h3>
-				<p>scing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor.iscing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor.</p>
+						<!-- <img id="bigger_image" src="css/images/bigger.jpeg"
+						onmouseover="moveoverbigger()"
+						onmouseout="movebackbigger()"
+						width="200" height="300" /> -->
 			</div>
 			<div class="cl">&nbsp;</div>
 		</div>
 		
 		<div id="sidebar" class="right">
+
+			<h2>Авторизация на сайте</h2>
+			<div class="item">
+				<form name="check_user_form">
+				<h3>e-mail (включает @):</h3><input type="text" name="email_input_box"><br /> 
+				<h3>phone number (только числа):</h3><input type="text" name="phone_input_box"><br />
+				<h3>password (включает буквы верхнего регистра и числа):</h3><input type="text" name="password_input_box"><br />
+				<br />
+				<input type="button" onclick="checkhisemail()" value="Проверить введенные данные"><br />
+				</form>
+			</div>
+
 			<h2>Последние новости</h2>
 			<div class="item">
 				<span class="date">28 Мая 2020</span>
@@ -113,7 +138,7 @@
 	
 	<div id="footer">
 		<div class="nav left">
-			
+			orem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		</div>
 
 		<p class="copy right">© ПМ17 2020</p>
