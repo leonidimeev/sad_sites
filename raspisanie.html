@@ -1,71 +1,81 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Назначение DOCTYPE -->
-
-<!-- 
-Задание - сайт по дисциплине WEB - технологии с комментариями
-Выполнили студенты группы ПМ-17
-Имеев Леонид 
-Халыев Ньургун
-Тарабукин Иван -->
-
-<html lang="ru-RU" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<!doctype html>
+<html lang="ru-RU">
 <head>
-	<title>Расписание</title>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Расписание (раскрывающееся меню)</title>
+  <link rel="stylesheet" type="text/css" media="all" href="styleraspisanie.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault();
+  });
+    
+  $('#ddmenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul',this).stop(true,true).slideDown(200);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul',this).stop(true,true).slideUp(200);
+    }, this), 100));
+  });
 
+});
+</script>
 </head>
 
-<body>
-<div class="shell">
-	<div id="header">
-
-		<!-- Заголовок -->
-		<h1 id="logo"><a href="#">Сайт-задание по дисциплине<br /><span class="min"><span class="red">WEB - технологии</span></a></h1>
-
-		<!-- Навигация -->
-		<div id="navigation">
-			<ul>
-
-				<!-- При указании на элемент изменяет класс объекта на active - описано в style.css -->
-				<li><a href="index.html">Группа</a></li>
-				<li><a href="/">Навигация по VPS</a></li>
-				<li><a href="raspisanie.html">Расписание</a></li>
-				<li><a href="scriptpage.html">JS-Скрипты</a></li>
-
-			</ul>
-			<div class="cl">&nbsp;</div>
-		</div>
-
-	</div>
-	
-	
-	
-	<div id="raspisanie">
-		
-	<table>
-    <tr>
-        <td>понедельник<div>1. -<div>2. исследование операций и методы оптимизации 457<div>3. исследование операций и методы оптимизации 555<div>4. численные методы 457<div>5. -</td>
-        <td>вторник<div>1. -<div>2. -<div>3. физика 457<div>4. физика 457<div>5. уравнения математической физики 326</td>
-        <td>среда<div>1. физическая культура<div>2. теория вероятностей и мат. статистика 455<div>3. теория вероятностей и мат. статистика 455<div>4. системы программирования 457<div>5. системы программирования 533<div></td>
-    </tr>
-    <tr>
-        <td>четверг<div>1. функциональный анализ 457<div>2. функциональный анализ 457<div>3. численные методы 436<div>4. численные методы 430<div>5. -</td>
-        <td>пятница<div>1. -<div>2. -<div>3. -<div>4. уравнения математической физики 447<div>5. web - технологии 519<div>6. web - технологии 519</td>
-        <td>суббота<div>1. физическая культура<div>2. методы конечных элементов 436<div>3. методы конечных элементов 455<div>4. -<div>5. -</td>
-    </tr>
-	</table>
-	</div>
-	
-	<div id="footer">
-		<div class="nav left">
-			
-		</div>
-
-		<p class="copy right">© ПМ17 2020</p>
-		<div class="cl">&nbsp;</div>
-	</div>
-</div>
-</body>
-</html>
+<nav>
+      <ul id="ddmenu">
+        <li><a href="index.html">Назад на главный сайт</a></li>
+        <li><a href="#">Понедельник</a>
+          <ul>
+            <li><a href="#">-</a></li>
+            <li><a href="#">ИОМО</a></li>
+            <li><a href="#">ИОМО</a></li>
+            <li><a href="#">Численные методы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Вторник</a>
+          <ul>
+            <li><a href="#">Физика</a></li>
+            <li><a href="#">Физика</a></li>
+            <li><a href="#">Уравнения математической физики</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Среда</a>
+          <ul>
+            <li><a href="#">Физкультура</a></li>
+            <li><a href="#">Теория вероятностей и мат. статистика</a></li>
+            <li><a href="#">Теория вероятностей и мат. статистика</a></li>
+            <li><a href="#">Системы программирования</a></li>
+            <li><a href="#">Системы программирования</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Четверг</a>
+          <ul>
+            <li><a href="#">Функциональный анализ</a></li>
+            <li><a href="#">Функциональный анализ</a></li>
+            <li><a href="#">Численные методы</a></li>
+            <li><a href="#">Численные методы</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Пятница</a>
+          <ul>
+            <li><a href="#">-</a></li>
+            <li><a href="#">-</a></li>
+            <li><a href="#">-</a></li>
+            <li><a href="#">Уравнения математической физики</a></li>
+            <li><a href="#">Web-технологии</a></li>
+			<li><a href="#">Web-технологии</a></li>          
+		  </ul>
+        </li>
+        <li><a href="#">Суббота</a>
+          <ul>
+            <li><a href="#">Физкультура</a></li>
+            <li><a href="#">Метод конечных элементов</a></li>
+            <li><a href="#">Метод конечных элементов</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </nav>

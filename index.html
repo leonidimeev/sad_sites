@@ -92,25 +92,27 @@
  				</div>
 			</div>
 			<div class="col right">
-				<h2>название колонки</h2>
-						<!-- <img id="bigger_image" src="css/images/bigger.jpeg"
-						onmouseover="moveoverbigger()"
-						onmouseout="movebackbigger()"
-						width="200" height="300" /> -->
+				<h2>Взорви кота</h2>
+					<img src = "css/images/tenor.gif" width = "250" height ="250">
 			</div>
 			<div class="cl">&nbsp;</div>
 		</div>
 		
 		<div id="sidebar" class="right">
 
+			<h3>Системное время</h3>
+			<p><SCRIPT> writeDate(); </SCRIPT> </p>
+			<p><SCRIPT> writeTime(); </SCRIPT> </p>
+
 			<h2>Авторизация на сайте</h2>
 			<div class="item">
 				<form name="check_user_form">
-				<h3>e-mail (включает @):</h3><input type="text" name="email_input_box"><br /> 
-				<h3>phone number (только числа):</h3><input type="text" name="phone_input_box"><br />
-				<h3>password (включает буквы верхнего регистра и числа):</h3><input type="text" name="password_input_box"><br />
+				<p id="message" >Пожалуйста, заполните все поля формы!</p> 
+				<h3>e-mail (включает @):</h3><input type="text" id="email"><br /> 
+				<h3>phone number (только числа):</h3><input type="text" id="phone"><br />
+				<h3>password:</h3><input type="text" id="password_input_box"><br />
 				<br />
-				<input type="button" onclick="checkhisemail()" value="Проверить введенные данные"><br />
+				<input type="button" id ="explosion_cat_button" value="Проверить введенные данные"><br />
 				</form>
 			</div>
 
@@ -138,6 +140,8 @@
 	
 	<div id="footer">
 		<div class="nav left">
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<div class="elfsight-app-99504792-fa3f-448f-8714-7de662608c92"></div>
 			orem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		</div>
 
